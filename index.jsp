@@ -120,12 +120,12 @@
                                 pst.setString(1, name);
                                 pst.setString(2, choice);
                                 pst.executeUpdate();
-                                msg = "✅ Thank you, <b>" + name + "</b>!<br>Your choice (<b>" + choice + "</b>) has been saved.";
+                                msg = " Thank you, <b>" + name + "</b>!<br>Your choice (<b>" + choice + "</b>) has been saved.";
                                 msgClass = "success";
                             }
                         }
                     } catch(Exception e) {
-                        msg = "❌ Error: " + e.getMessage();
+                        msg = " Error: " + e.getMessage();
                         msgClass = "error";
                     }
             %>
